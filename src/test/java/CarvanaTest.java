@@ -39,7 +39,7 @@ public class CarvanaTest extends Base {
     @Test(testName = "Carvana sign in validation", priority = 4)
     public void validateTheCarvanaSignIn() {
         driver.get("https://www.carvana.com/");
-        Assert.assertTrue(driver.findElement(By.cssSelector("div[data-qa = 'header-menu-wrapper']>div>a>svg")).isDisplayed());
+        Waiter.waitForWebElementToBeVisible(driver, 10, driver.findElement(By.xpath("//a[@data-cv-test='headerSignInLink']")));
         driver.findElement(By.xpath("//a[@data-cv-test='headerSignInLink']")).click();
 
         Waiter.waitForWebElementToBeVisible(driver, 10, driver.findElement(By.xpath("//div[@data-cv-test='Header.Modal']")));
