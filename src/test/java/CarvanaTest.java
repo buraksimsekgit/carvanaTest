@@ -114,7 +114,7 @@ public class CarvanaTest extends Base {
             Assert.assertTrue(tileTrimMileageInformation.get(i).isDisplayed());
             Assert.assertFalse(tileTrimMileageInformation.get(i).getText().isEmpty());
             Assert.assertTrue(tilePrice.get(i).isDisplayed());
-            Assert.assertTrue(Integer.parseInt( tilePrice.get(i).getText().replaceAll("[^0-9]", "")) > 0);
+            Assert.assertTrue(Integer.parseInt(tilePrice.get(i).getText().replaceAll("[^0-9]", "")) > 0);
             Assert.assertTrue(monthlyPayment.get(i).isDisplayed());
             Assert.assertFalse(monthlyPayment.get(i).getText().isEmpty());
             Assert.assertTrue(downPayment.get(i).isDisplayed());
