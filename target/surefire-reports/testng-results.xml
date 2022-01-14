@@ -2,80 +2,80 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-14T05:40:41Z" name="Regression" finished-at="2022-01-14T05:41:38Z" duration-ms="57551">
+  <suite started-at="2022-01-14T06:43:16Z" name="Regression" finished-at="2022-01-14T06:44:16Z" duration-ms="60572">
     <groups>
     </groups>
-    <test started-at="2022-01-14T05:40:41Z" name="All Functionalities" finished-at="2022-01-14T05:41:38Z" duration-ms="57551">
+    <test started-at="2022-01-14T06:43:16Z" name="All Functionalities" finished-at="2022-01-14T06:44:16Z" duration-ms="60572">
       <class name="CarvanaTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:40:41Z" name="setUp" finished-at="2022-01-14T05:40:49Z" duration-ms="8001" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:16Z" name="setUp" finished-at="2022-01-14T06:43:24Z" duration-ms="8289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ValidateCarvanaHomePageTitleAndUrl()[pri:1, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:40:49Z" name="ValidateCarvanaHomePageTitleAndUrl" finished-at="2022-01-14T05:40:51Z" duration-ms="2220" status="PASS">
+        <test-method signature="ValidateCarvanaHomePageTitleAndUrl()[pri:1, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:24Z" name="ValidateCarvanaHomePageTitleAndUrl" finished-at="2022-01-14T06:43:27Z" duration-ms="3397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCarvanaHomePageTitleAndUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:40:51Z" name="tearDown" finished-at="2022-01-14T05:40:52Z" duration-ms="756" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:27Z" name="tearDown" finished-at="2022-01-14T06:43:28Z" duration-ms="526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:40:52Z" name="setUp" finished-at="2022-01-14T05:40:53Z" duration-ms="1437" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:28Z" name="setUp" finished-at="2022-01-14T06:43:29Z" duration-ms="1460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateTheCarvanaLogo()[pri:2, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:40:53Z" name="validateTheCarvanaLogo" finished-at="2022-01-14T05:40:57Z" duration-ms="4184" status="PASS">
+        <test-method signature="validateTheCarvanaLogo()[pri:2, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:29Z" name="validateTheCarvanaLogo" finished-at="2022-01-14T06:43:34Z" duration-ms="4304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTheCarvanaLogo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:40:57Z" name="tearDown" finished-at="2022-01-14T05:40:58Z" duration-ms="540" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:34Z" name="tearDown" finished-at="2022-01-14T06:43:34Z" duration-ms="578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:40:58Z" name="setUp" finished-at="2022-01-14T05:40:59Z" duration-ms="1454" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:34Z" name="setUp" finished-at="2022-01-14T06:43:36Z" duration-ms="1482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateTheMainNavigationSectionItems()[pri:3, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:40:59Z" name="validateTheMainNavigationSectionItems" finished-at="2022-01-14T05:41:02Z" duration-ms="3001" status="PASS">
+        <test-method signature="validateTheMainNavigationSectionItems()[pri:3, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:36Z" name="validateTheMainNavigationSectionItems" finished-at="2022-01-14T06:43:39Z" duration-ms="3044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTheMainNavigationSectionItems -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:41:02Z" name="tearDown" finished-at="2022-01-14T05:41:03Z" duration-ms="562" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:39Z" name="tearDown" finished-at="2022-01-14T06:43:39Z" duration-ms="578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:41:03Z" name="setUp" finished-at="2022-01-14T05:41:04Z" duration-ms="1433" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:39Z" name="setUp" finished-at="2022-01-14T06:43:41Z" duration-ms="1451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateTheCarvanaSignIn()[pri:4, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:41:04Z" name="validateTheCarvanaSignIn" finished-at="2022-01-14T05:41:09Z" duration-ms="4261" status="PASS">
+        <test-method signature="validateTheCarvanaSignIn()[pri:4, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:41Z" name="validateTheCarvanaSignIn" finished-at="2022-01-14T06:43:45Z" duration-ms="4127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTheCarvanaSignIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:41:09Z" name="tearDown" finished-at="2022-01-14T05:41:09Z" duration-ms="644" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:45Z" name="tearDown" finished-at="2022-01-14T06:43:46Z" duration-ms="533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:41:09Z" name="setUp" finished-at="2022-01-14T05:41:11Z" duration-ms="1444" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:46Z" name="setUp" finished-at="2022-01-14T06:43:47Z" duration-ms="1433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateTheeSarchFilterOptionsAndSearchButton()[pri:5, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:41:11Z" name="validateTheeSarchFilterOptionsAndSearchButton" finished-at="2022-01-14T05:41:20Z" duration-ms="9270" status="PASS">
+        <test-method signature="validateTheeSarchFilterOptionsAndSearchButton()[pri:5, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:47Z" name="validateTheeSarchFilterOptionsAndSearchButton" finished-at="2022-01-14T06:43:56Z" duration-ms="8926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTheeSarchFilterOptionsAndSearchButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:41:20Z" name="tearDown" finished-at="2022-01-14T05:41:21Z" duration-ms="657" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:56Z" name="tearDown" finished-at="2022-01-14T06:43:57Z" duration-ms="645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:41:21Z" name="setUp" finished-at="2022-01-14T05:41:22Z" duration-ms="1422" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:57Z" name="setUp" finished-at="2022-01-14T06:43:58Z" duration-ms="1427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateTheSearchResultTiles()[pri:6, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:41:22Z" name="validateTheSearchResultTiles" finished-at="2022-01-14T05:41:38Z" duration-ms="15493" status="PASS">
+        <test-method signature="validateTheSearchResultTiles()[pri:6, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:43:58Z" name="validateTheSearchResultTiles" finished-at="2022-01-14T06:44:16Z" duration-ms="17548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTheSearchResultTiles -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T05:41:38Z" name="tearDown" finished-at="2022-01-14T05:41:38Z" duration-ms="754" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:CarvanaTest@2aa5fe93]" started-at="2022-01-14T06:44:16Z" name="tearDown" finished-at="2022-01-14T06:44:16Z" duration-ms="805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
