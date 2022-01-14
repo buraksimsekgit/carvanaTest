@@ -1,0 +1,7 @@
+<suite name="Regression">
+    <test name="All Functionalities">
+        <classes>
+            <class name="CarvanaTest"/>
+        </classes>
+    </test>
+</suite>
