@@ -57,7 +57,7 @@ public class CarvanaTest extends Base {
     }
 
     @Test(testName = "Search filter options and search button validation", priority = 5)
-    public void validateTheeSarchFilterOptionsAndSearchButton() {
+    public void validateTheSearchFilterOptionsAndSearchButton() {
         driver.get("https://www.carvana.com/");
         driver.findElement(By.xpath("//a[@data-cv-test='Taxseason.SearchLink']")).click();
 
