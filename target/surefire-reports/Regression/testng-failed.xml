@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]" verbose="0">
+  <test thread-count="5" name="All Functionalities(failed)" verbose="0">
+    <classes>
+      <class name="CarvanaTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="validateTheeSarchFilterOptionsAndSearchButton"/>
+          <include name="ValidateCarvanaHomePageTitleAndUrl"/>
+          <include name="validateTheSearchResultTiles"/>
+          <include name="validateTheCarvanaSignIn"/>
+          <include name="validateTheMainNavigationSectionItems"/>
+          <include name="validateTheCarvanaLogo"/>
+        </methods>
+      </class> <!-- CarvanaTest -->
+    </classes>
+  </test> <!-- All Functionalities(failed) -->
+</suite> <!-- Failed suite [Regression] -->

@@ -39,7 +39,7 @@ public class CarvanaTest extends Base {
     @Test(testName = "Carvana sign in validation", priority = 4)
     public void validateTheCarvanaSignIn() {
         driver.get("https://www.carvana.com/");
-        Waiter.waitForWebElementToBeVisible(driver, 10, driver.findElement(By.xpath("//a[@data-cv-test='headerSignInLink']")));
+        Waiter.waitForWebElementToBeClickable(driver, 10, driver.findElement(By.xpath("//a[@data-cv-test='headerSignInLink']")));
         driver.findElement(By.xpath("//a[@data-cv-test='headerSignInLink']")).click();
 
         Waiter.waitForWebElementToBeVisible(driver, 10, driver.findElement(By.xpath("//div[@data-cv-test='Header.Modal']")));
@@ -73,7 +73,7 @@ public class CarvanaTest extends Base {
         }
         driver.findElement(By.xpath("//input[@data-cv-test='Cv.Search.keywordSearchInput']")).sendKeys("Tesla");
 
-        Waiter.waitForWebElementToBeVisible(driver, 10, driver.findElement(By.xpath("//button[@data-qa='go-button']")));
+        Waiter.waitForWebElementToBeClickable(driver, 10, driver.findElement(By.xpath("//button[@data-qa='go-button']")));
         Assert.assertEquals(driver.findElement(By.xpath("//button[@data-qa='go-button']")).getText(), "GO",
                 "\"GO\" button in the search input box is displayed as expected FAILED");
     }
@@ -119,7 +119,7 @@ public class CarvanaTest extends Base {
             Assert.assertFalse(monthlyPayment.get(i).getText().isEmpty());
             Assert.assertTrue(downPayment.get(i).isDisplayed());
             Assert.assertFalse(downPayment.get(i).getText().isEmpty());
-            Assert.assertEquals(deliveryChip.get(i).getText(), "Free Shipping");
+            Assert.assertEquals(deliveryChip.get(i).getText(), "Free Shipping", "Delivery chip must be displayed as actual text FAILED");
         }
     }
 }
