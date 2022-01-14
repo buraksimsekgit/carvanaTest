@@ -11,19 +11,15 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
-    //private constructor to achieve singleton design pattern
-    private Driver(){
 
+    private Driver(){
     }
 
-
-    //private WebDriver instance variable to restrict direct access to driver instance
     private static WebDriver driver;
 
     public static WebDriver getDriver() {
         if(driver == null){
-            //String browser = "chrome";
-            String browser = ConfigReader.getProperty("browser"); //firefox
+            String browser = ConfigReader.getProperty("browser");
             switch (browser){
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
