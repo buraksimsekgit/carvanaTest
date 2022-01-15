@@ -8,7 +8,7 @@ import java.util.List;
 
 public class CarvanaTest extends Base {
 
-    @Test(testName = "Carvana title validation", priority = 1)
+    @Test(testName = "Validate Carvana home page title and url", priority = 1)
     public void ValidateCarvanaHomePageTitleAndUrl() {
         driver.get("https://www.carvana.com/");
         Assert.assertEquals(driver.getTitle(), "Carvana | Buy & Finance Used Cars Online | At Home Delivery"
@@ -16,14 +16,14 @@ public class CarvanaTest extends Base {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.carvana.com/", "URL validation FAILED");
     }
 
-    @Test(testName = "Carvana logo validation", priority = 2)
+    @Test(testName = "Validate the Carvana logo", priority = 2)
     public void validateTheCarvanaLogo() {
         driver.get("https://www.carvana.com/");
         Waiter.pause(2);
         Assert.assertTrue(driver.findElement(By.xpath("//div[@data-qa='logo-wrapper']")).isDisplayed(), "Carvana logo display validation FAILED");
     }
 
-    @Test(testName = "Carvana the main navigation validation", priority = 3)
+    @Test(testName = "Validate the main navigation section items", priority = 3)
     public void validateTheMainNavigationSectionItems() {
         driver.get("https://www.carvana.com/");
         Waiter.waitForWebElementToBeVisible(driver, 10, driver.findElement(By.xpath("//div[@data-qa='menu-title']")));
@@ -32,38 +32,41 @@ public class CarvanaTest extends Base {
         String[] actualHeaders = {"HOW IT WORKS", "ABOUT CARVANA", "SUPPORT & CONTACT"};
 
         for (int i = 0; i < navigationHeaders.size(); i++) {
+            Assert.assertTrue(navigationHeaders.get(i).isDisplayed(), "Navigation section items display validation FAILED");
             Assert.assertEquals(navigationHeaders.get(i).getText(), actualHeaders[i]);
         }
     }
 
-    @Test(testName = "Carvana sign in validation", priority = 4)
-    public void validateTheCarvanaSignIn() {
+    @Test(testName = "Validate the sign in error message", priority = 4)
+    public void validateTheSignInErrorMessage() {
         driver.get("https://www.carvana.com/");
         Waiter.waitForWebElementToBeClickable(driver, 10, driver.findElement(By.xpath("//a[@data-cv-test='headerSignInLink']")));
         driver.findElement(By.xpath("//a[@data-cv-test='headerSignInLink']")).click();
 
         Waiter.waitForWebElementToBeVisible(driver, 10, driver.findElement(By.xpath("//div[@data-cv-test='Header.Modal']")));
-        Assert.assertTrue(driver.findElement(By.xpath("//div[@data-cv-test='Header.Modal']")).isDisplayed(), "User navigated to Sign in FAILED");
+        Assert.assertTrue(driver.findElement(By.xpath("//div[@data-cv-test='Header.Modal']")).isDisplayed(), "User navigated to \"Sign in\" modal FAILED");
 
         List<WebElement> loginInput = driver.findElements(By.xpath("//form[@data-qa='account-modal-forms-wrapper']/div/div/div/input"));
         String[] input = {"johndoe@gmail.com", "abcd1234"};
+
         for (int i = 0; i <loginInput.size(); i++) {
             loginInput.get(i).sendKeys(input[i]);
         }
+
         driver.findElement(By.xpath("//button[@data-cv='sign-in-submit']")).click();
         Waiter.waitForWebElementToBeVisible(driver, 10, driver.findElement(By.xpath("//div[@data-qa='error-message-container']")));
         Assert.assertEquals(driver.findElement(By.xpath("//div[@data-qa='error-message-container']")).getText(),
                 "Email address and/or password combination is incorrect\nPlease try again or reset your password.");
     }
 
-    @Test(testName = "Search filter options and search button validation", priority = 5)
+    @Test(testName = "Validate the search filter options and search button", priority = 5)
     public void validateTheSearchFilterOptionsAndSearchButton() {
         driver.get("https://www.carvana.com/");
         driver.findElement(By.xpath("//a[@data-cv-test='Taxseason.SearchLink']")).click();
 
         Waiter.waitForURLToBe(driver, 10, "https://www.carvana.com/cars");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.carvana.com/cars", "User directed to right URL validation FAILED");
-        Assert.assertTrue(driver.findElement(By.xpath("//input[@data-cv-test='Cv.Search.keywordSearchInput']")).isDisplayed(), "Search input bar Sign in FAILED");
+        Assert.assertTrue(driver.findElement(By.xpath("//input[@data-cv-test='Cv.Search.keywordSearchInput']")).isDisplayed(), "Search input box validation FAILED");
 
         List<WebElement> filterOptions = driver.findElements(By.xpath("//div[@data-qa='menu-flex']/button"));
         String[] expectedFilterOptions = {"PAYMENT & PRICE", "MAKE & MODEL", "BODY TYPE", "YEAR & MILEAGE", "FEATURES", "MORE FILTERS"};
@@ -71,14 +74,12 @@ public class CarvanaTest extends Base {
         for (int i = 0; i < filterOptions.size(); i++) {
             Assert.assertEquals(filterOptions.get(i).getText(), expectedFilterOptions[i]);
         }
-        driver.findElement(By.xpath("//input[@data-cv-test='Cv.Search.keywordSearchInput']")).sendKeys("Tesla");
 
-        Waiter.waitForWebElementToBeClickable(driver, 10, driver.findElement(By.xpath("//button[@data-qa='go-button']")));
-        Assert.assertEquals(driver.findElement(By.xpath("//button[@data-qa='go-button']")).getText(), "GO",
-                "\"GO\" button in the search input box is displayed as expected FAILED");
+        driver.findElement(By.xpath("//input[@data-cv-test='Cv.Search.keywordSearchInput']")).sendKeys("Tesla");
+        Assert.assertTrue(driver.findElement(By.xpath("//button[@data-qa='go-button']")).isDisplayed(), "\"GO\" button in the search input box is displayed as expected FAILED");
     }
 
-    @Test(testName = "The search result tiles validation", priority = 6)
+    @Test(testName = "Validate the search result tiles", priority = 6)
     public void validateTheSearchResultTiles() {
         driver.get("https://www.carvana.com/");
         driver.findElement(By.xpath("//a[@data-cv-test='Taxseason.SearchLink']")).click();
